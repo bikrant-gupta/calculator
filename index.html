@@ -1,0 +1,123 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Calculator</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="calc.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-md-3 col-12 col-md-6 fix">
+        <div class="calcu">
+          <header>
+            <div class="navbar brand-name">
+              ONLINE CALCULATOR
+            </div>
+          </header> 
+    <div class="container">
+                    <div class="row "> 
+
+                      <div class="col-12 container disp bg-dark">
+                        <div class="row">
+                          <div class="display_all col-12">
+                            0
+                          </div>
+                          <div class="display_total col-12">
+                            0
+                          </div>
+                          <div class="display col-12">
+                              0
+                          </div>
+                        </div>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_clear();" id="clickclear">C</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="" id="compname">
+                          <span id="a1">B</span>.
+                          <span id="a2">K</span>.
+                          <span id="a3">G</span>
+                        </button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_sign();" id="clicksign">-/+</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_Delete();" id="clickdel">Del</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3  ">
+                        <button onclick="call_num1();" id="click1" class="">1</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num2();" id="click2">2</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num3();" id="click3">3</button>
+                      </div>
+
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_add();" id="clicka">+</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num4();" id="click4">4</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num5();" id="click5">5</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num6();" id="click6">6</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_sub();" id="clicks">-</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num7();" id="click7">7</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num8();" id="click8">8</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num9();" id="click9">9</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_mul();" id="clickm">x</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_dot();" id="clickdot">.</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_num0();" id="click0">0</button>
+                      </div>
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_div();" id="clickd">/</button>
+                      </div>
+                      
+                      <div id="button" class="col-md-3 col-3 col-sm-3 col-lg-3">
+                        <button onclick="call_equal();" id="clickequal">=</button>
+                      </div>
+                    </div>
+  </div> 
+    </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="val1"></div>
+  <div class="val2"></div>
+  <div class="total d-none"></div>
+  <script src="calc.js"></script>
+</body>
+</HTML>
